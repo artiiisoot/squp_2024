@@ -1,0 +1,55 @@
+@keyframes OpacityAni {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes Scale {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes FadeInDown {
+  0% {
+    transform: translateY(-20%);
+  }
+
+  100% {
+    
+    transform: translateY(0%);
+  }
+}
+
+@keyframes SlideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes SideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes SideLeftHidden {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+    display: none;
+  }
+}
+
