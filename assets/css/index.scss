@@ -107,7 +107,7 @@ section {
 
 #Main {
   position: relative;
-  background: unset;
+  background: rgba($color: $G100, $alpha: 0.2);
   .main-content {
     position: relative;
     padding: 10rem 0;
@@ -376,7 +376,9 @@ footer {
     }
 
     td {
+      font-size: 0.875rem;
       &.time {
+        font-size: 1rem;
         text-align: center;
         font-weight: 700;
         color: $G50;

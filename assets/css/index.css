@@ -144,7 +144,7 @@ section .container .title p {
 
 #Main {
   position: relative;
-  background: unset;
+  background: rgba(0, 0, 0, 0.2);
 }
 #Main .main-content {
   position: relative;
@@ -380,7 +380,11 @@ footer .sns ul li {
 .table-wrapper table th.speaker p {
   color: #5272e9;
 }
+.table-wrapper table td {
+  font-size: 0.875rem;
+}
 .table-wrapper table td.time {
+  font-size: 1rem;
   text-align: center;
   font-weight: 700;
   color: #909090;
