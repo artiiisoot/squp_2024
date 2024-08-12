@@ -27,8 +27,8 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, system-ui,
-    Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+  font-family: "SUIT", -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
 }
@@ -96,7 +96,9 @@ section {
       column-count: auto;
       gap: 1rem;
       h5 {
-        font-size: 2.5rem;
+        font-size: 32px;
+        font-weight: 900;
+        letter-spacing: -0.4px;
       }
       p {
         font-size: 1.25rem;
@@ -108,16 +110,23 @@ section {
 #Main {
   position: relative;
   background: rgba($color: $G100, $alpha: 0.2);
-  .main-content {
-    position: relative;
-    padding: 10rem 0;
-    padding-top: 12rem;
 
+  .main-content {
     .container {
+      position: relative;
       display: flex;
       flex-direction: column;
       column-count: auto;
       gap: 1.5rem;
+      padding: 10rem 0;
+      padding-top: 12rem;
+      height: 100%;
+    }
+
+    .raon-logo {
+      position: absolute;
+      top: 5rem;
+      right: 0;
     }
 
     .title {
@@ -125,14 +134,21 @@ section {
       flex-direction: column;
       align-items: flex-start;
       column-count: auto;
-      gap: 1.5rem;
       color: $G00;
 
+      span {
+        font-size: 2.5rem;
+        font-weight: 300;
+      }
       h1 {
-        font-size: 5.75rem;
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 1.6;
       }
       h5 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: $G50;
       }
     }
 
@@ -163,22 +179,42 @@ section {
   }
 
   .overlay {
-    padding: 6.25rem 0;
+    padding: 2rem 0;
     background: rgba($G100, 0.6);
     color: $G00;
 
-    .text-item {
+    .container {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
       column-count: auto;
-      gap: 2rem;
-      max-width: 50%;
-      h5 {
-        font-size: 1.5rem;
-      }
-      p {
-        font-size: 1.125rem;
+      gap: 5rem;
+    }
+
+    ul {
+      display: flex;
+      column-count: auto;
+      align-items: center;
+      gap: 1rem;
+
+      li {
+        display: flex;
+        align-items: center;
+        font-size: 1.25rem;
+        white-space: nowrap;
+
+        &:first-child {
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 1.25rem;
+            background: $G00;
+            margin-left: 0.5rem;
+          }
+        }
+
+        img {
+          height: 2.5rem;
+        }
       }
     }
   }
@@ -190,18 +226,70 @@ section {
     height: 100%;
     width: 100%;
     z-index: -1;
+    background: $G100;
 
-    .bg-video-content {
+    .bg-video-content,
+    .bg-image-content {
       height: 100%;
       width: 100%;
       object-fit: cover;
+      transition: all 1s;
+    }
+
+    .bg-image-content {
+      opacity: 0;
+      display: none;
+      transition: opacity 1s ease-in-out;
     }
   }
 }
 
 #Section01 {
+  background: #001a38;
+
   .container {
-    padding-bottom: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-count: auto;
+    gap: 5rem;
+    padding: 2.5rem 0;
+  }
+
+  .text-item {
+    display: flex;
+    flex-direction: column;
+    column-count: auto;
+    gap: 0.625rem;
+
+    p {
+      &:nth-child(1) {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.4;
+        color: $G00;
+      }
+      &:nth-child(2) {
+        font-size: 0.875rem;
+        line-height: 1.5;
+        color: $G50;
+      }
+    }
+
+    .button-group {
+      margin-top: 0.625rem;
+      button {
+        width: 9.625rem;
+        height: 3.25rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $G00;
+        padding: 1rem;
+        border-radius: 6.25rem;
+        background: #008cdd;
+      }
+    }
   }
 }
 
@@ -228,7 +316,8 @@ section {
 }
 
 footer {
-  background: $G30;
+  background: #001927;
+  color: $G00;
   .container {
     position: relative;
     display: flex;
@@ -245,6 +334,7 @@ footer {
     }
     p {
       font-size: 1.25rem;
+      color: #a39cb3;
     }
   }
   .bottom {
@@ -284,7 +374,7 @@ footer {
         justify-content: center;
         width: 4rem;
         height: 4rem;
-        background: rgba($G100, 0.3);
+        background: #3c2d5d;
       }
     }
   }

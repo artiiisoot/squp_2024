@@ -1,5 +1,49 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "SUIT";
+  font-weight: 100;
+  src: url("../../fonts/SUIT/SUIT-Thin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SUIT";
+  font-weight: 200;
+  src: url("../../fonts/SUIT/SUIT-ExtraLight.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SUIT";
+  font-weight: 300;
+  src: url("../../fonts/SUIT/SUIT-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SUIT";
+  font-weight: 400;
+  src: url("../../fonts/SUIT/SUIT-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SUIT";
+  font-weight: 500;
+  src: url("../../fonts/SUIT/SUIT-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SUIT";
+  font-weight: 600;
+  src: url("../../fonts/SUIT/SUIT-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SUIT";
+  font-weight: 700;
+  src: url("../../fonts/SUIT/SUIT-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SUIT";
+  font-weight: 800;
+  src: url("../../fonts/SUIT/SUIT-ExtraBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SUIT";
+  font-weight: 900;
+  src: url("../../fonts/SUIT/SUIT-Heavy.woff2") format("woff2");
+}
 @keyframes OpacityAni {
   0% {
     opacity: 0;
@@ -72,7 +116,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  font-family: "SUIT", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
 }
 
 button {
@@ -136,7 +180,9 @@ section .container .title {
   gap: 1rem;
 }
 section .container .title h5 {
-  font-size: 2.5rem;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.4px;
 }
 section .container .title p {
   font-size: 1.25rem;
@@ -146,30 +192,41 @@ section .container .title p {
   position: relative;
   background: rgba(0, 0, 0, 0.2);
 }
-#Main .main-content {
-  position: relative;
-  padding: 10rem 0;
-  padding-top: 12rem;
-}
 #Main .main-content .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   column-count: auto;
   gap: 1.5rem;
+  padding: 10rem 0;
+  padding-top: 12rem;
+  height: 100%;
+}
+#Main .main-content .raon-logo {
+  position: absolute;
+  top: 5rem;
+  right: 0;
 }
 #Main .main-content .title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   column-count: auto;
-  gap: 1.5rem;
   color: #ffffff;
 }
+#Main .main-content .title span {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
 #Main .main-content .title h1 {
-  font-size: 5.75rem;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.6;
 }
 #Main .main-content .title h5 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #909090;
 }
 #Main .main-content .text-item {
   display: flex;
@@ -191,23 +248,37 @@ section .container .title p {
   line-height: 1.4;
 }
 #Main .overlay {
-  padding: 6.25rem 0;
+  padding: 2rem 0;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
 }
-#Main .overlay .text-item {
+#Main .overlay .container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   column-count: auto;
-  gap: 2rem;
-  max-width: 50%;
+  gap: 5rem;
 }
-#Main .overlay .text-item h5 {
-  font-size: 1.5rem;
+#Main .overlay ul {
+  display: flex;
+  column-count: auto;
+  align-items: center;
+  gap: 1rem;
 }
-#Main .overlay .text-item p {
-  font-size: 1.125rem;
+#Main .overlay ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  white-space: nowrap;
+}
+#Main .overlay ul li:first-child::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 1.25rem;
+  background: #ffffff;
+  margin-left: 0.5rem;
+}
+#Main .overlay ul li img {
+  height: 2.5rem;
 }
 #Main .bg-video {
   position: absolute;
@@ -216,15 +287,62 @@ section .container .title p {
   height: 100%;
   width: 100%;
   z-index: -1;
+  background: #000000;
 }
-#Main .bg-video .bg-video-content {
+#Main .bg-video .bg-video-content,
+#Main .bg-video .bg-image-content {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: all 1s;
+}
+#Main .bg-video .bg-image-content {
+  opacity: 0;
+  display: none;
+  transition: opacity 1s ease-in-out;
 }
 
+#Section01 {
+  background: #001a38;
+}
 #Section01 .container {
-  padding-bottom: unset;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-count: auto;
+  gap: 5rem;
+  padding: 2.5rem 0;
+}
+#Section01 .text-item {
+  display: flex;
+  flex-direction: column;
+  column-count: auto;
+  gap: 0.625rem;
+}
+#Section01 .text-item p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #ffffff;
+}
+#Section01 .text-item p:nth-child(2) {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #909090;
+}
+#Section01 .text-item .button-group {
+  margin-top: 0.625rem;
+}
+#Section01 .text-item .button-group button {
+  width: 9.625rem;
+  height: 3.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 6.25rem;
+  background: #008cdd;
 }
 
 #LastSeminar {
@@ -250,7 +368,8 @@ section .container .title p {
 }
 
 footer {
-  background: #dedede;
+  background: #001927;
+  color: #ffffff;
 }
 footer .container {
   position: relative;
@@ -269,6 +388,7 @@ footer .top h5 {
 }
 footer .top p {
   font-size: 1.25rem;
+  color: #a39cb3;
 }
 footer .bottom {
   display: flex;
@@ -306,7 +426,7 @@ footer .sns ul li {
   justify-content: center;
   width: 4rem;
   height: 4rem;
-  background: rgba(0, 0, 0, 0.3);
+  background: #3c2d5d;
 }
 
 .speakers {
