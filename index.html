@@ -32,7 +32,7 @@
         <!-- <div class="scroll-icon"></div> -->
       </div>
 
-      <div class="overlay">
+      <div class="overlay fade" data-ref="3">
         <div class="container">
           <ul>
             <li>주최</li>
@@ -81,14 +81,14 @@
 
     <section id="Section01">
       <div class="container">
-        <div class="content-img">
+        <div class="content-img fade" data-ref="4">
           <img
             src="./assets/images/content_img_01.png"
             alt="Lorem ipsum dolor sit amet"
           />
         </div>
 
-        <div class="text-item">
+        <div class="text-item fade" data-ref="5">
           <p>
             Lorem ipsum dolor sit amet, <br />
             consectetuer adipiscing elit!
@@ -116,12 +116,12 @@
 
     <section id="Section02">
       <div class="container">
-        <div class="title">
-          <h5 class="fade" data-ref="7">Speakers</h5>
+        <div class="title fade" data-ref="6">
+          <h5>Speakers</h5>
         </div>
 
-        <div class="speakers">
-          <div class="item-box fade" data-ref="8">
+        <div class="speakers fade" data-ref="7">
+          <div class="item-box">
             <div class="thumb">
               <img src="https://placehold.co/400" alt="speaker_name" />
             </div>
@@ -138,7 +138,7 @@
               <li>option to your user</li>
             </ul>
           </div>
-          <div class="item-box fade" data-ref="9">
+          <div class="item-box">
             <div class="thumb">
               <img src="https://placehold.co/400" alt="speaker_name" />
             </div>
@@ -155,7 +155,7 @@
               <li>option to your user</li>
             </ul>
           </div>
-          <div class="item-box fade" data-ref="10">
+          <div class="item-box">
             <div class="thumb">
               <img src="https://placehold.co/400" alt="speaker_name" />
             </div>
@@ -172,7 +172,7 @@
               <li>option to your user</li>
             </ul>
           </div>
-          <div class="item-box fade" data-ref="11">
+          <div class="item-box">
             <div class="thumb">
               <img src="https://placehold.co/400" alt="speaker_name" />
             </div>
@@ -544,7 +544,7 @@
 
       items.forEach((item, idx) => {
         if (idx < 6) {
-          fadeInElement(item, idx * 500); // 1-second interval
+          fadeInElement(item, idx * 1000); // 1-second interval
         }
       });
 
