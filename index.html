@@ -75,7 +75,7 @@
           <source src="./assets/video/sample.mp4" type="video/mp4" />
         </video>
 
-        <img src="./assets/images/bg-img.png" alt="" class="bg-image-content" />
+        <img src="./assets/images/hero_bg.png" alt="" class="hero_bg 이미지" />
       </div>
     </main>
 
@@ -83,8 +83,8 @@
       <div class="container">
         <div class="content-img fade" data-ref="4">
           <img
-            src="./assets/images/content_img_01.png"
-            alt="Lorem ipsum dolor sit amet"
+            src="./assets/images/section_01_content_img_01.png"
+            alt="section_01_content_img_01 이미지"
           />
         </div>
 
@@ -120,11 +120,50 @@
           <h5>Speakers</h5>
         </div>
 
-        <div class="speakers fade" data-ref="7">
+        <div class="bg-img">
+          <!-- <img src="./assets/images/speaker_bg.png" alt="배경이미지" /> -->
+        </div>
+
+        <!-- <div class="speakers fade" data-ref="7"> -->
+        <!-- <div class="group-wrapper"> -->
+        <div class="item-group left fade" data-ref="7">
           <div class="item-box">
-            <div class="thumb">
-              <img src="https://placehold.co/400" alt="speaker_name" />
-            </div>
+            <!-- <div class="thumb">
+                <img src="https://placehold.co/400" alt="speaker_name" />
+              </div> -->
+
+            <p class="name">NAME</p>
+
+            <ul class="dot-style">
+              <li>Build on the top of your</li>
+              <li>security infrastructure</li>
+              <li>Give additional, more</li>
+              <li>secured authentication</li>
+              <li>option to your user</li>
+            </ul>
+          </div>
+          <div class="item-box">
+            <!-- <div class="thumb">
+                <img src="https://placehold.co/400" alt="speaker_name" />
+              </div> -->
+
+            <p class="name">NAME</p>
+
+            <ul class="dot-style">
+              <li>Build on the top of your</li>
+              <li>security infrastructure</li>
+              <li>Give additional, more</li>
+              <li>secured authentication</li>
+              <li>option to your user</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="item-group right fade" data-ref="7">
+          <div class="item-box">
+            <!-- <div class="thumb">
+                  <img src="https://placehold.co/400" alt="speaker_name" />
+                </div> -->
 
             <p class="name">NAME</p>
 
@@ -139,43 +178,9 @@
             </ul>
           </div>
           <div class="item-box">
-            <div class="thumb">
-              <img src="https://placehold.co/400" alt="speaker_name" />
-            </div>
-
-            <p class="name">NAME</p>
-
-            <span class="line"></span>
-
-            <ul class="dot-style">
-              <li>Build on the top of your</li>
-              <li>security infrastructure</li>
-              <li>Give additional, more</li>
-              <li>secured authentication</li>
-              <li>option to your user</li>
-            </ul>
-          </div>
-          <div class="item-box">
-            <div class="thumb">
-              <img src="https://placehold.co/400" alt="speaker_name" />
-            </div>
-
-            <p class="name">NAME</p>
-
-            <span class="line"></span>
-
-            <ul class="dot-style">
-              <li>Build on the top of your</li>
-              <li>security infrastructure</li>
-              <li>Give additional, more</li>
-              <li>secured authentication</li>
-              <li>option to your user</li>
-            </ul>
-          </div>
-          <div class="item-box">
-            <div class="thumb">
-              <img src="https://placehold.co/400" alt="speaker_name" />
-            </div>
+            <!-- <div class="thumb">
+                  <img src="https://placehold.co/400" alt="speaker_name" />
+                </div> -->
 
             <p class="name">NAME</p>
 
@@ -190,17 +195,19 @@
             </ul>
           </div>
         </div>
+        <!-- </div> -->
+        <!-- </div> -->
       </div>
     </section>
 
-    <!-- <section id="Section02">
+    <section id="Section03">
       <div class="container">
-        <div class="title fade" data-ref="12">
+        <div class="title fade" data-ref="8">
           <h5>Agenda</h5>
           <p>2024. Oct. 29</p>
         </div>
 
-        <div class="table-wrapper fade" data-ref="13">
+        <div class="table-wrapper fade" data-ref="9">
           <table>
             <thead>
               <tr>
@@ -218,7 +225,7 @@
                     >
                       <path
                         d="M8.5 0.5C4.08065 0.5 0.5 4.08065 0.5 8.5C0.5 12.9194 4.08065 16.5 8.5 16.5C12.9194 16.5 16.5 12.9194 16.5 8.5C16.5 4.08065 12.9194 0.5 8.5 0.5ZM15.4677 8.5C15.4677 12.329 12.3677 15.4677 8.5 15.4677C4.67097 15.4677 1.53226 12.3677 1.53226 8.5C1.53226 4.67097 4.63226 1.53226 8.5 1.53226C12.329 1.53226 15.4677 4.63226 15.4677 8.5ZM10.6645 11.3484L8.04516 9.44516C7.94516 9.37097 7.8871 9.25484 7.8871 9.13226V3.98387C7.8871 3.77097 8.06129 3.59677 8.27419 3.59677H8.72581C8.93871 3.59677 9.1129 3.77097 9.1129 3.98387V8.70323L11.3871 10.3581C11.5613 10.4839 11.5968 10.7258 11.471 10.9L11.2065 11.2645C11.0806 11.4355 10.8387 11.4742 10.6645 11.3484Z"
-                        fill="#909090"
+                        fill="#efefef"
                       />
                     </svg>
                     소요시간
@@ -329,7 +336,10 @@
                   <p>30분</p>
                 </td>
                 <td class="content">
-                  <p class="table-bg-lightblue">국가디지털ID 로드맵</p>
+                  <p class="table-bg-lightblue">
+                    새로운 신원 증명의 시대 OmniOne Digital ID, 단,
+                    하국가디지털ID 로드맵나의 인증창으로 OmniOne CX
+                  </p>
                 </td>
                 <td class="speaker">
                   <p class="table-bg-blue">조폐공사 (한성민 이사)</p>
@@ -349,7 +359,7 @@
                   </p>
                 </td>
                 <td class="speaker">
-                  <p class="table-bg-blue">조폐공사 (한성민 이사)</p>
+                  <p class="table-bg-blue">라온 (미정)</p>
                 </td>
               </tr>
               <tr>
@@ -405,33 +415,119 @@
       </div>
     </section>
 
-    <section id="LastSeminar">
+    <section id="Section04">
       <div class="container">
-        <div class="title fade" data-ref="14">
+        <div class="title fade" data-ref="12">
           <h5>지난 세미나 살펴보기</h5>
         </div>
 
-        <div class="button-group fade" data-ref="15">
+        <div class="button-group fade" data-ref="13">
           <button>2023 시큐업 세미나</button>
           <button>2022 시큐업 세미나</button>
           <button>2019 시큐업 세미나</button>
         </div>
       </div>
-    </section> -->
+    </section>
+
+    <section id="Section05">
+      <div class="container">
+        <div class="title fade" data-ref="10">
+          <h5>Event</h5>
+        </div>
+
+        <div class="item-wrapper flex-col fade" data-ref="11">
+          <div class="event-item">
+            <div class="text-item">
+              <span>현장 등록 이벤트</span>
+              <h5>Welcome to 시큐업!</h5>
+              <p>
+                시큐업 현장 등록을 하신 분 전원에게 <br />
+                친환경 리유저블백과 스마트 안심번호 3년 이용권을 드립니다.
+              </p>
+            </div>
+
+            <div class="event-img">
+              <img src="https://placehold.co/600x400" alt="" />
+            </div>
+          </div>
+
+          <div class="item-wrapper flex-row">
+            <div class="event-item">
+              <div class="text-item">
+                <span>현장 등록 이벤트 1</span>
+                <h5>Lucky Draw</h5>
+                <p>
+                  응모함에 명함을 넣어주시면 세미나 종료 후 <br />
+                  추첨을 통해 행운의 경품을 드립니다!
+                </p>
+              </div>
+
+              <div class="event-img">
+                <img src="https://placehold.co/400" alt="" />
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="text-item">
+                <span>현장 등록 이벤트 2</span>
+                <h5>라온을 뽑아라!</h5>
+                <p>
+                  라오니,라오나, 라옹이를<br />
+                  인형뽑기로 만나보세요!
+                </p>
+              </div>
+
+              <div class="event-img">
+                <img src="https://placehold.co/400" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Section06">
+      <div class="container">
+        <div class="title fade" data-ref="14">
+          <h5>Location</h5>
+        </div>
+
+        <div class="map-img fade" data-ref="15">
+          <img
+            src="./assets/images/section_06_content_img_01.png"
+            alt="오시는길 이미지"
+          />
+        </div>
+
+        <div class="text-item fade" data-ref="16">
+          <h5>안내 및 주의사항:</h5>
+          <ul>
+            <li>- 본 행사는 무료이며, 사전 등록자 우선으로 참석 가능합니다.</li>
+            <li>
+              - 한정된 좌석수로 인해 도착하시는 순서대로 입장에 제한이 있을 수
+              있는 점 양해 부탁드립니다.
+            </li>
+            <li>- 사전등록 확인은 행사당일 13시부터 시작됩니다.</li>
+            <li>- 행사 및 이벤트 관련 문의 : mkt@raoncorp.com</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="container">
         <div class="top">
-          <h5>Digital Trust Networks Inc.</h5>
+          <h5>라온시큐어㈜</h5>
           <p>
-            2350 Mission College Boulevard, Suite 380 Santa Clara, CA 95054 USA
+            서울특별시 영등포구 여의대로 108,파크원타워2 47층, 48층<br />
+            대표전화 02-561-4545 홈페이지
+            <a href="https://www.raoncorp.com">https://www.raoncorp.com</a>
           </p>
         </div>
 
         <div class="bottom">
-          <p>© 2024 Digital Trust Networks Inc. All rights reserved.</p>
+          <p>Copyright © RaonSecure. All rights reserved.</p>
 
-          <ul>
+          <!-- <ul>
             <li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -478,11 +574,11 @@
               </svg>
               <a>Privacy Policy</a>
             </li>
-          </ul>
+          </ul> -->
         </div>
 
         <div class="sns">
-          <ul>
+          <!-- <ul>
             <li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -513,7 +609,10 @@
                 />
               </svg>
             </li>
-          </ul>
+          </ul> -->
+          <div class="raon-logo">
+            <img src="./assets/images/logo/raon.svg" alt="라온" />
+          </div>
         </div>
       </div>
     </footer>
@@ -536,6 +635,8 @@
 
       const items = document.querySelectorAll("[data-ref]");
 
+      console.log("items", items);
+
       const fadeInElement = (item, delay) => {
         setTimeout(() => {
           item.classList.add("visible");
@@ -543,7 +644,7 @@
       };
 
       items.forEach((item, idx) => {
-        if (idx < 6) {
+        if (idx < 5) {
           fadeInElement(item, idx * 1000); // 1-second interval
         }
       });
@@ -558,7 +659,7 @@
 
       const onScroll = () => {
         items.forEach((item, idx) => {
-          if (idx >= 6 && isElementInViewport(item)) {
+          if (idx >= 5 && isElementInViewport(item)) {
             item.classList.add("visible");
           }
         });
