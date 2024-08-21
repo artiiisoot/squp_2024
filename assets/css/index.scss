@@ -756,7 +756,7 @@ footer {
 
 .fade {
   opacity: 0;
-  transition: all 1.5s;
+  transition: all 1s;
   transform: translate(0, 100px);
 
   &.visible {
