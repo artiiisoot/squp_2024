@@ -120,7 +120,7 @@ section {
 }
 #Main {
   position: relative;
-  background: url("https://artiiisoot.github.io/squp_2024/assets/images/hero_bg.png") no-repeat center right, #000000;
+  background: url("https://www.squp.kr/2024/assets/images/hero_bg.png") no-repeat center right, #000000;
   background-size: cover;
 
   .main-content {
@@ -297,7 +297,7 @@ section {
   }
 }
 #Section02 {
-  background: url("https://artiiisoot.github.io/squp_2024/assets/images/section_02_bg.png") no-repeat center center,
+  background: url("https://www.squp.kr/2024/assets/images/section_02_bg.png") no-repeat center center,
     // $G100;
     linear-gradient(90deg, #00060a 30%, #000000);
   background-size: contain;
@@ -307,7 +307,7 @@ section {
   }
 }
 #Section04 {
-  background: url("https://artiiisoot.github.io/squp_2024/assets/images/section_04_bg.png") no-repeat center center,
+  background: url("https://www.squp.kr/2024/assets/images/section_04_bg.png") no-repeat center center,
     #001a38;
   background-size: contain;
   .container {
@@ -426,7 +426,7 @@ section {
 #Section06 {
   display: flex;
   align-items: center;
-  background: url("https://artiiisoot.github.io/squp_2024/assets/images/section_06_bg.png") no-repeat center center,
+  background: url("https://www.squp.kr/2024/assets/images/section_06_bg.png") no-repeat center center,
     linear-gradient(#011113 70%, #041d24);
   background-size: contain;
 
@@ -769,6 +769,7 @@ footer {
         gap: 0.25rem;
 
         i.icon {
+          display: flex;
           width: 0.875rem;
           height: 0.875rem;
         }

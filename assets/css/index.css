@@ -3,47 +3,47 @@
 @font-face {
   font-family: "SUIT";
   font-weight: 100;
-  src: url("../../fonts/SUIT/SUIT-Thin.woff2") format("woff2");
+  src: url("https://www.squp.kr/2024/assets/fonts/SUIT/SUIT-Thin.woff2") format("woff2");
 }
 @font-face {
   font-family: "SUIT";
   font-weight: 200;
-  src: url("../../fonts/SUIT/SUIT-ExtraLight.woff2") format("woff2");
+  src: url("https://www.squp.kr/2024/assets/fonts/SUIT/SUIT-ExtraLight.woff2") format("woff2");
 }
 @font-face {
   font-family: "SUIT";
   font-weight: 300;
-  src: url("../../fonts/SUIT/SUIT-Light.woff2") format("woff2");
+  src: url("https://www.squp.kr/2024/assets/fonts/SUIT/SUIT-Light.woff2") format("woff2");
 }
 @font-face {
   font-family: "SUIT";
   font-weight: 400;
-  src: url("../../fonts/SUIT/SUIT-Regular.woff2") format("woff2");
+  src: url("https://www.squp.kr/2024/assets/fonts/SUIT/SUIT-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "SUIT";
   font-weight: 500;
-  src: url("../../fonts/SUIT/SUIT-Medium.woff2") format("woff2");
+  src: url("https://www.squp.kr/2024/assets/fonts/SUIT/SUIT-Medium.woff2") format("woff2");
 }
 @font-face {
   font-family: "SUIT";
   font-weight: 600;
-  src: url("../../fonts/SUIT/SUIT-SemiBold.woff2") format("woff2");
+  src: url("https://www.squp.kr/2024/assets/fonts/SUIT/SUIT-SemiBold.woff2") format("woff2");
 }
 @font-face {
   font-family: "SUIT";
   font-weight: 700;
-  src: url("../../fonts/SUIT/SUIT-Bold.woff2") format("woff2");
+  src: url("https://www.squp.kr/2024/assets/fonts/SUIT/SUIT-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "SUIT";
   font-weight: 800;
-  src: url("../../fonts/SUIT/SUIT-ExtraBold.woff2") format("woff2");
+  src: url("https://www.squp.kr/2024/assets/fonts/SUIT/SUIT-ExtraBold.woff2") format("woff2");
 }
 @font-face {
   font-family: "SUIT";
   font-weight: 900;
-  src: url("../../fonts/SUIT/SUIT-Heavy.woff2") format("woff2");
+  src: url("https://www.squp.kr/2024/assets/fonts/SUIT/SUIT-Heavy.woff2") format("woff2");
 }
 @keyframes OpacityAni {
   0% {
@@ -221,7 +221,7 @@ section .container .title p {
 
 #Main {
   position: relative;
-  background: url("https://artiiisoot.github.io/squp_2024/assets/images/hero_bg.png") no-repeat center right, #000000;
+  background: url("https://www.squp.kr/2024/assets/images/hero_bg.png") no-repeat center right, #000000;
   background-size: cover;
 }
 #Main .main-content .container {
@@ -343,7 +343,7 @@ section .container .title p {
 }
 
 #Section02 {
-  background: url("https://artiiisoot.github.io/squp_2024/assets/images/section_02_bg.png") no-repeat center center, linear-gradient(90deg, #00060a 30%, #000000);
+  background: url("https://www.squp.kr/2024/assets/images/section_02_bg.png") no-repeat center center, linear-gradient(90deg, #00060a 30%, #000000);
   background-size: contain;
 }
 #Section02 .button-group {
@@ -352,7 +352,7 @@ section .container .title p {
 }
 
 #Section04 {
-  background: url("https://artiiisoot.github.io/squp_2024/assets/images/section_04_bg.png") no-repeat center center, #001a38;
+  background: url("https://www.squp.kr/2024/assets/images/section_04_bg.png") no-repeat center center, #001a38;
   background-size: contain;
 }
 #Section04 .container {
@@ -462,7 +462,7 @@ section .container .title p {
 #Section06 {
   display: flex;
   align-items: center;
-  background: url("https://artiiisoot.github.io/squp_2024/assets/images/section_06_bg.png") no-repeat center center, linear-gradient(#011113 70%, #041d24);
+  background: url("https://www.squp.kr/2024/assets/images/section_06_bg.png") no-repeat center center, linear-gradient(#011113 70%, #041d24);
   background-size: contain;
 }
 #Section06 .container {
@@ -769,6 +769,7 @@ footer .bottom .copyright {
   gap: 0.25rem;
 }
 .table-wrapper table th > div i.icon {
+  display: flex;
   width: 0.875rem;
   height: 0.875rem;
 }
@@ -931,7 +932,7 @@ footer .bottom .copyright {
     font-size: 2.34375vw;
   }
   #Main {
-    background: url("https://artiiisoot.github.io/squp_2024/assets/images/hero_bg.png") no-repeat bottom left 40%, #000000;
+    background: url("https://www.squp.kr/2024/assets/images/hero_bg.png") no-repeat bottom left 40%, #000000;
     background-size: 180%;
   }
   #Main .main-content .container {
@@ -1068,7 +1069,7 @@ footer .bottom .copyright {
   }
   #Section04 .event-item:nth-child(3) {
     position: relative;
-    background: url("https://artiiisoot.github.io/squp_2024/assets/images/section_04_mo_bg.png") no-repeat center center;
+    background: url("https://www.squp.kr/2024/assets/images/section_04_mo_bg.png") no-repeat center center;
     background-size: cover;
     min-height: 31.25vw;
   }
@@ -1078,7 +1079,7 @@ footer .bottom .copyright {
     bottom: 0;
   }
   #Section05 {
-    background: url("https://artiiisoot.github.io/squp_2024/assets/images/section_05_bg.png") no-repeat center center, #001a38;
+    background: url("https://www.squp.kr/2024/assets/images/section_05_bg.png") no-repeat center center, #001a38;
     background-size: cover;
   }
   #Section05 .container {
@@ -1259,6 +1260,7 @@ footer .bottom .copyright {
   }
   .table-wrapper table td {
     vertical-align: middle;
+    font-size: 1.953125vw;
   }
   .table-wrapper table td.time {
     font-size: 1.953125vw;
@@ -1317,7 +1319,7 @@ footer .bottom .copyright {
     font-size: 3.125vw;
   }
   #Main {
-    background: url("https://artiiisoot.github.io/squp_2024/assets/images/hero_bg.png") no-repeat bottom left 40%, #000000;
+    background: url("https://www.squp.kr/2024/assets/images/hero_bg.png") no-repeat bottom left 40%, #000000;
     background-size: 180%;
   }
   #Main .main-content .container {
@@ -1453,7 +1455,7 @@ footer .bottom .copyright {
   }
   #Section04 .event-item:nth-child(3) {
     position: relative;
-    background: url("https://artiiisoot.github.io/squp_2024/assets/images/section_04_mo_bg.png") no-repeat center center;
+    background: url("https://www.squp.kr/2024/assets/images/section_04_mo_bg.png") no-repeat center center;
     background-size: cover;
     min-height: 41.6666666667vw;
   }
@@ -1463,7 +1465,7 @@ footer .bottom .copyright {
     bottom: 0;
   }
   #Section05 {
-    background: url("https://artiiisoot.github.io/squp_2024/assets/images/section_05_bg.png") no-repeat center center, #001a38;
+    background: url("https://www.squp.kr/2024/assets/images/section_05_bg.png") no-repeat center center, #001a38;
     background-size: cover;
   }
   #Section05 .container {
@@ -1600,6 +1602,17 @@ footer .bottom .copyright {
   .table-wrapper table th {
     height: vvw(80);
   }
+  .table-wrapper table th > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-count: auto;
+    gap: 0.25rem;
+  }
+  .table-wrapper table th > div i.icon {
+    width: 3.125vw;
+    height: 3.125vw;
+  }
   .table-wrapper table tr td.time, .table-wrapper table tr td.required, .table-wrapper table tr td.content {
     border-bottom: 1px solid #595b7e;
   }
@@ -1631,7 +1644,7 @@ footer .bottom .copyright {
     width: 18.75vw;
   }
   .table-wrapper table .required {
-    width: 10.4166666667vw;
+    width: 20.8333333333vw;
   }
   .table-wrapper table .required p {
     white-space: nowrap;
