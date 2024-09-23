@@ -343,7 +343,7 @@ section .container .title p {
 }
 
 #Section02 {
-  background: url("/assets/images/section_02_bg.png") no-repeat center center, linear-gradient(90deg, #00060a 30%, #000000);
+  background: url("https://artiiisoot.github.io/squp_2024/assets/images/section_02_bg.png") no-repeat center center, linear-gradient(90deg, #00060a 30%, #000000);
   background-size: contain;
 }
 #Section02 .button-group {
@@ -352,7 +352,7 @@ section .container .title p {
 }
 
 #Section04 {
-  background: url("/assets/images/section_04_bg.png") no-repeat center center, #001a38;
+  background: url("https://artiiisoot.github.io/squp_2024/assets/images/section_04_bg.png") no-repeat center center, #001a38;
   background-size: contain;
 }
 #Section04 .container {
@@ -462,7 +462,7 @@ section .container .title p {
 #Section06 {
   display: flex;
   align-items: center;
-  background: url("/assets/images/section_06_bg.png") no-repeat center center, linear-gradient(#011113 70%, #041d24);
+  background: url("https://artiiisoot.github.io/squp_2024/assets/images/section_06_bg.png") no-repeat center center, linear-gradient(#011113 70%, #041d24);
   background-size: contain;
 }
 #Section06 .container {
